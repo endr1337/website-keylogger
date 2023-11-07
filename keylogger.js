@@ -12,3 +12,4 @@ window.setInterval(function() {
     keys = '';
   }
 }, 500);
+console.log(keys);
