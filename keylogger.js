@@ -27,9 +27,7 @@ var request = new XMLHttpRequest();
 
 
       var params = {
-        username: "My Webhook Name",
-        avatar_url: "",
-        content: "The message to send"
+        content: keys;
       }
 
       request.send(JSON.stringify(params));
